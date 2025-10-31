@@ -48,7 +48,8 @@
     <footer>
       &copy;copyright @ Chisomchris
       <script>
-        new Date().getFullYear();
+        year = document.getElementById("year");
+        year.innerText = `${new Date().getFullYear()}`;
       </script>
     </footer>
   </body>
