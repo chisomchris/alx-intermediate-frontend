@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery Using Grid and Flexbox Layout</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @media (max-width: 768px) {
+        main {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body class="p-4">
+    <header class="bg-blue-500 text-white p-4">
+      <h1 class="text-3xl">Grid and Flexbox Layout</h1>
+    </header>
+
+    <main class="grid grid-cols-1 gap-4 mt-4 min-h-screen lg:grid-cols-3">
+      <section class="lg:col-span-2 flex">
+        <div class="p-4 bg-red-200 w-1/2">Flexbox Item 1</div>
+        <div class="p-4 bg-red-400 w-1/2">Flexbox Item 2</div>
+      </section>
+      <aside class="bg-green-200 p-4">Sidebar</aside>
+    </main>
+
+    <section class="py-4">
+      <h2 class="text-xl text-red-500 font-bold">Image Gallery</h2>
+
+      <div class="grid grid-cols-1 gap-4 py-4 md:grid-cols-2 lg:grid-cols-3">
+        <figure class="bg-gray-100 pb-4 rounded-md overflow-hidden">
+          <img
+            src="https://picsum.photos/300/200?random=1"
+            alt="Example image"
+            class="w-full"
+          />
+          <figcaption class="p-2">
+            Random Image from
+            <a href="https://picsum.photos" class="text-blue-500"
+              >Lorem Picsum</a
+            >
+          </figcaption>
+        </figure>
+
+        <figure class="bg-gray-100 pb-4 rounded-md overflow-hidden">
+          <img
+            src="https://picsum.photos/300/200?random=2"
+            alt="Example image"
+            class="w-full"
+          />
+          <figcaption class="p-2">
+            Random Image from
+            <a href="https://picsum.photos" class="text-blue-500"
+              >Lorem Picsum</a
+            >
+          </figcaption>
+        </figure>
+
+        <figure class="bg-gray-100 pb-4 rounded-md overflow-hidden">
+          <img
+            src="https://picsum.photos/300/200?random=3"
+            alt="Example image"
+            class="w-full"
+          />
+          <figcaption class="p-2">
+            Random Image from
+            <a href="https://picsum.photos" class="text-blue-500"
+              >Lorem Picsum</a
+            >
+          </figcaption>
+        </figure>
+
+        <figure class="bg-gray-100 pb-4 rounded-md overflow-hidden">
+          <img
+            src="https://picsum.photos/300/200?random=4"
+            alt="Example image"
+            class="w-full"
+          />
+          <figcaption class="p-2">
+            Random Image from
+            <a href="https://picsum.photos" class="text-blue-500"
+              >Lorem Picsum</a
+            >
+          </figcaption>
+        </figure>
+
+        <figure class="bg-gray-100 pb-4 rounded-md overflow-hidden">
+          <img
+            src="https://picsum.photos/300/200?random=5"
+            alt="Example image"
+            class="w-full"
+          />
+          <figcaption class="p-2">
+            Random Image from
+            <a href="https://picsum.photos" class="text-blue-500"
+              >Lorem Picsum</a
+            >
+          </figcaption>
+        </figure>
+
+        <figure class="bg-gray-100 pb-4 rounded-md overflow-hidden">
+          <img
+            src="https://picsum.photos/300/200?random=6"
+            alt="Example image"
+            class="w-full"
+          />
+          <figcaption class="p-2">
+            Random Image from
+            <a href="https://picsum.photos" class="text-blue-500"
+              >Lorem Picsum</a
+            >
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+    <footer class="bg-gray-800 text-white p-4 mt-4">
+      <p>&copy; 2024 John Doe's Blog</p>
+    </footer>
+  </body>
+</html>
